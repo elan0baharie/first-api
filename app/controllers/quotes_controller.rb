@@ -32,7 +32,7 @@ class QuotesController < ApplicationController
     @quote = Quote.find(params[:id])
     if @quote.destroy!
       render status: 200, json: {
-        message: "Your quote has been successfully."
+        message: "Your quote has been successfully deleted."
       }
     end
   end
